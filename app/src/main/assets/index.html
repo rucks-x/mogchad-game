@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-BR"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>MOG CHAD – Vagabundo Games</title>
+<link rel="stylesheet" href="style.css"></head><body>
+<div class="scr on" id="splash"><div style="font-size:4rem">🎮</div><div class="logo">VAGABUNDO GAMES</div><div style="opacity:.7;margin-top:8px">apresenta</div></div>
+<div class="scr" id="menu"><h1>MOG CHAD</h1><p style="max-width:310px;opacity:.85">Toque para juntar <b>aura</b>, evolua seu Chad, compre personagens e mogue geral em <b>30 fases</b>, com chefes, fatalities e 9 troféus. Zere e ganhe o Troféu Chad.</p><div style="font-size:.7rem;opacity:.5">© Vagabundo Games</div><button class="btn" id="play">JOGAR</button><button class="btn" id="newg" style="background:#2d2350;color:#fff">NOVO JOGO (zerar tudo)</button></div>
+<div class="scr" id="win"><div class="trophy">🏆</div><h1>VOCÊ ZEROU!</h1><div id="wt" style="display:flex;flex-wrap:wrap;gap:8px;justify-content:center"></div><div style="font-size:.8rem;opacity:.6">Vagabundo Games</div><button class="btn" id="again">JOGAR DE NOVO (zera tudo)</button></div>
+<div class="scr" id="ko"><div style="font-size:5rem">💀</div><h1>NOCAUTE!</h1><p>Sua vida acabou. Tudo zera: personagens, upgrades e auras. Só os troféus ficam.</p><button class="btn" id="retry">TENTAR DE NOVO</button></div>
+<div class="scr" id="dev"><h1 style="font-size:1.5rem">🛠️ DESENVOLVEDOR</h1><div id="dvl" style="display:flex;flex-direction:column;gap:6px;width:min(320px,92vw);max-height:68vh;overflow-y:auto"></div><button class="btn" style="font-size:1rem;padding:10px 22px;margin-top:8px" onclick="$('dev').classList.remove('on')">Fechar</button></div>
+<div id="app">
+ <div id="hd"><div id="lv"></div><div id="aura"></div></div><div id="dots"></div>
+ <div id="hpw"><div id="fill"></div><div id="hpt"></div></div><div id="php"><div id="pfill"></div><div id="ptxt"></div></div>
+ <div id="stage"><div id="meW" class="ch"><svg id="me" viewBox="-60 0 320 300" style="width:100%;height:100%"></svg></div><div id="foe"></div><img id="ph" src="foe.jpg" style="display:none"><div id="fx"></div><div id="fat"></div><div id="qte"></div></div>
+ <div id="acts"><button id="tapbtn">💪 MOGAR!</button><button class="pw" id="pw0">⚡</button><button class="pw" id="pw1">👁️</button><button class="pw" id="pw2">💥</button></div>
+ <div id="tabs"><button id="t0" class="on">⬆️ Upgrades</button><button id="t1">🧬 Personagens</button><button id="t2">🏆 Troféus</button><button id="t3">🔥 Auras</button><button id="t4">❤️ Status</button></div>
+ <div id="panel"></div>
+</div>
+<script src="game.js"></script></body></html>
